@@ -5,27 +5,26 @@
 // vetor com o número de vezes que ele bateu seu recorde de maior número de pontos e quando fez seu pior
 // jogo. (Número do pior jogo)
 
-let stringJogos = "30, 40, 20, 4, 51, 25, 42, 38, 56"
+let stringJogos = "30, 40, 20, 4, 51, 25, 42, 38, 56,0"
 
 function comparaValores(stringJogos) {
     let valores = stringJogos.split(',')
     let maior = valores[0]
     let menor = valores[0]
-    console.log(typeof(valores));
 
-    for (let i = 1; i < valores.length; i++){
+    for (let i = 1; i < valores.length; i++) {
 
-        if(valores[i] > maior){
+        if (valores[i] > maior) {
             maior = valores[i]
             console.log(maior);
         }
-        if(valores[i] < menor){
+        if (valores[i] < menor) {
             menor = valores[i]
-            console.log(menor);
         }
-        
+
     }
-    
+
+
 }
 comparaValores(stringJogos)
 
